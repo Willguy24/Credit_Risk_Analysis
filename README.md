@@ -7,38 +7,49 @@ The objective of this evaluation is to employ supervised learning models to clas
 We will begin by looking at the first set of techniques, which involves oversampling and undersampling, and their outcomes.
 
 ## Naive Random Oversampling
---Naive Random Oversampling
+![Naive Random Oversampling](Pictures/Naive_Random_Oversampling.png)
 
 -Balanced accuracy score: 0.65
+
 -Precision score: 0.99
+
 -Recall score: 0.59
 
 ## SMOTE Oversampling
---SMOTE Oversampling
+![SMOTE Oversampling](Pictures/SMOTE_Oversampling.png)
 
 -Balanced accuracy score: 0.65
+
 -Precision score: 0.99
+
 -Recall score: 0.59
+
 
 ## Undersampling
---Undersampling
+![Undersampling](Pictures/Undersampling.png)
 
 -Balanced accuracy score: 0.52
+
 -Precision score: 0.99
+
 -Recall score: 0.40
 
+
 ## Combination (Over and Under) Sampling
---Combination (Over and Under) Sampling
+![Combination (Over and Under) Sampling](Pictures/Combination_(Over_and_Under)_Sampling.png)
 
 -Balanced accuracy score: 0.65
+
 -Precision score: 0.99
+
 -Recall score: 0.59
+
 
 ## Ensemble Techniques
 Next, we will move on to the second set of analyses, which involves ensemble techniques and their outcomes:
 
 ## Balanced Random Forest Classifier
---Balanced Random Forest Classifier
+![Balanced Random Forest Classifier](Pictures/Balanced_Random_Forest_Classifier.png)
 
 -Balanced accuracy score: 0.78
 -Precision score: 0.99
@@ -47,19 +58,27 @@ Next, we will move on to the second set of analyses, which involves ensemble tec
 The Balanced Random Forest Classifier also provides scores for the most important features used in the model. The top features, according to the random forest classifier, are:
 
 -total_rec_prncp: (0.07876809003486353)
+
 -total_pymnt: (0.05883806887524815)
+
 -total_pymnt_inv: (0.05625613759225244)
+
 -total_rec_int: (0.05355513093134745)
+
 -last_pymnt_amnt: (0.0500331813446525)
 
--- Pic
+
+![Important Features](Pictures/Important_Features.png)
 
 ## Easy Ensemble AdaBoost Classifier
---Easy Ensemble AdaBoost Classifier
+![Easy Ensemble AdaBoost Classifier](Pictures/Easy_Ensemble_AdaBoost_Classifier.png)
 
 -Balanced accuracy score: 0.93
+
 -Precision score: 0.99
+
 -Recall score: 0.94
+
 
 ## Summary
 The balanced accuracy score, which indicates the accuracy of the test results based on the training module, varied significantly across each model, ranging from 54% to 93%. None of the results were excessively high, which suggests that the data was not oversampled.
